@@ -41,8 +41,8 @@ Before you begin, make sure you have PyYAML installed: `pip install pyyaml`
 Otherwise, you will run into `ModuleNotFoundError: No module named "yaml"`.
 
 Via `git`:
-* Windows: `git clone https://github.com/WarutaShinken/silo-wallet & cd silo-wallet & silo.py -h`
 * Linux: `git clone https://github.com/WarutaShinken/silo-wallet; cd silo-wallet; python3 silo.py -h`
+* Windows: `git clone https://github.com/WarutaShinken/silo-wallet & cd silo-wallet & silo.py -h`
 
 Manually:
 1. Download ZIP from https://github.com/WarutaShinken/silo-wallet/archive/refs/heads/main.zip
