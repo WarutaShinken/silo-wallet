@@ -52,8 +52,8 @@ Manually:
 ## Usage
 Help Dialogue Example:
 
-* Windows: `silo.py -h`
 * Linux: `python3 silo.py -h`
+* Windows: `silo.py -h`
 
 This tool may not work with `python` if the default is Python 2.
 
