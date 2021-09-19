@@ -1,3 +1,5 @@
+# Forked by WarutaShinken from https://github.com/scotopic/silo-wallet
+# Original Header Comments:
 # Dependency comes from https://github.com/Chia-Network/chia-blockchain/blob/main/chia/util/bech32m.py
 # Genesis address referenced: https://www.chiaexplorer.com/blockchain/address/xch18krkt5a9jlkpmxtx8akfs9kezkuldpsn4j2qpxyycjka4m7vu6hstf6hku
 
@@ -34,7 +36,7 @@ def main(argv):
     argumentList = sys.argv[1:]
     
     # Short options
-    options = "hla:"
+    options = "hlb:s:"
     
     # Long options
     long_options = ["help", "reward-address", "list-forks"]
@@ -46,17 +48,24 @@ def main(argv):
         for currentArgument, currentValue in arguments:
             if currentArgument in ("-h", "--help"):
                 print("NAME")
-                print ("silo -- display your crypto (Chia/altcoin) wallet balance\n")
+                print ("\tsilo (WarutaShinken fork) -- display your crypto (Chia/altcoin) wallet balance as a raw number.")
+                print ("\tIntended for use in shell scripts.")
                 print("DESCRIPTION")
                 print ("\tsilo -h | --help - Display this help.")
-                print ("\tsilo -a <address> | --reward-address <address> - Display your wallet address balance")
+                print ("\tsilo -b <receive-address> | --balance <receive-address> - Display your wallet address balance")
+                print ("\tsilo -s <receive-address> | --spent <receive-address> - Display how many coins from your wallet were spent*")
                 print ("\tsilo -l | --list-forks - Display currently supported forks from the {} file".format(FORKS_LIST_FILE))
                 print("EXAMPLE")
-                print ("\tpython silo.py -a xch18krkt5a9jlkpmxtx8akfs9kezkuldpsn4j2qpxyycjka4m7vu6hstf6hku\n")
+                print ("\tpython silo.py -b xch18krkt5a9jlkpmxtx8akfs9kezkuldpsn4j2qpxyycjka4m7vu6hstf6hku\n")
+                print("ANNOTATION")
+                print ("\t*I'm not too sure what it means for a coin to be 'spent'. I will clarify this in an update when someone informs")
+                print ("\tme. Feel free to make an issue or PR to clarify it.")
             elif currentArgument in ("-l", "--list-forks"):
                 load_fork_names(print_list=True)
-            elif currentArgument in ("-a", "--reward_address"):
-                get_balance(sys.argv[2])
+            elif currentArgument in ("-b", "--balance"):
+                get_balance(sys.argv[2], False)
+            elif currentArgument in ("-s", "--spent"):
+                get_balance(sys.argv[2], True)
             
     except getopt.error as err:
         # output error, and return with an error code
@@ -126,18 +135,18 @@ def units_of_measurement(fork_token_name):
         
     return UNITS_OF_MEASUREMENT
 
-def get_balance(address):
+def get_balance(address, count_spent_coins):
     # print("Retreiving the wallet balance for:", address)
     
     # convert farmer address to puzzle hash
     puzzle_hash_bytes = decode_puzzle_hash(address)
     puzzle_hash = puzzle_hash_bytes.hex()
-    print(f"Searching for puzzle_hash: 0x{puzzle_hash}")
+    #print(f"Searching for puzzle_hash: 0x{puzzle_hash}")
     
     # sql for puzzle hash
     try:
         db_file_to_load = get_db_file_from_address(address)
-        print(db_file_to_load)
+        #print(db_file_to_load)
         conn = create_connection(db_file_to_load)
         
         dbcursor = conn.cursor()
@@ -155,8 +164,7 @@ def get_balance(address):
         
         rows = dbcursor.fetchall()
         
-        coin_balance = 0
-        coin_spent_total = 0
+        coin_count = 0
         
         for row in rows:
             
@@ -166,20 +174,19 @@ def get_balance(address):
             xch=xch_raw/UNITS_OF_MEASUREMENT
             # print("{:.12f}".format(xch))
             is_coin_spent = row[3]
-            if is_coin_spent:
-                coin_spent_total = xch + coin_spent_total
-            else:
-                coin_balance = xch + coin_balance
             
-        print("TOTAL (spent): {:.12f}".format(coin_spent_total))
-        print("TOTAL:         {:.12f}".format(coin_balance))
+            #If the coin matches the criteria we're after...
+            if is_coin_spent == count_spent_coins:
+                coin_count += xch
+            
+        print(format(coin_count, '.12f'), end="")
     except Error as e:
         print(e)
 
 def create_connection(db_file):
     conn = None
     try:
-        conn = sqlite3.connect(db_file)
+        conn = sqlite3.connect(str(db_file))
     except Error as e:
         print(e)
         
