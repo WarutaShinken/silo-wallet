@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). Since this is a simple fork of a Python program, I will be using integer versions rather than semantic ones. I will also be archiving each version into a branch instead of using releases.
 
 
+## [2] - 2021-09-21
+
+### Changes
+
+- Fixed a bug where the long options `--balance` and `--spent` were not recognised.
+- Reordered Linux and Windows instructions in README.md due to the fact that is tool was primarily made with headless linux farms in mind.
+
 ## [1] - 2021-09-20
 
 ### Changes
