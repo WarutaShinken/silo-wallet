@@ -39,7 +39,7 @@ def main(argv):
     options = "hlb:s:"
     
     # Long options
-    long_options = ["help", "reward-address", "list-forks"]
+    long_options = ["help", "balance", "spent", "list-forks"]
     
     try:
         # Parsing argument
