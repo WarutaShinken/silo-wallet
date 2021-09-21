@@ -73,7 +73,7 @@ HDDcoin   : 63.000000000000 HDD
 Flora     : 88.000000000000 XFL
 GreenDoge : 840.000000000000 GDOG
 ```
-This script has been ported to batch (example_script.bat) for Windows users. It should have identical output to it's Unix shell script counterpart.
+This script has been ported to Batch (example_script.bat) for Windows users. It should have identical output to it's Unix shell script counterpart.
 
 ## Support
 Found this project useful? Consider sending me (Waruta) a donation:
