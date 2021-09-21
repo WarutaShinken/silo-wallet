@@ -1,7 +1,7 @@
 @echo off
 
 ::Example script for getting the balances of every wallet at once.
-::This is a batch port of example_script.sh.
+::This is a Batch port of example_script.sh.
 
 :main
 	::Add your addresses here. These are mine (feel free to donate to them I guess).
