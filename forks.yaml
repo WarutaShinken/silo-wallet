@@ -36,6 +36,9 @@ srn: ".shamrock"
 cov: ".covid"
 xbr: ".beernetwork"
 xth: ".thyme"
-ffk: ".fxxkfork"
+ffk: ".fxxkfork" #Fishery
 xach: ".achi"
 xcd: ".cryptodoge"
+
+#WarutaShinken Fork Additions
+xgj: ".goji-blockchain"
