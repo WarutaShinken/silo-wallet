@@ -20,9 +20,7 @@ Quickly look up your Chia fork/altcoin wallet balance using your cold wallet pub
 
 ## Which Chia fork/altcoin is supported?
 Every one of them, in theory. If you run the full node of the Chia fork/altcoin then you can use this tool to look up your balance.
-You can see the currently known forks in the `forks.yaml` alternativelly run to see the same list:
-
-`python3 silo.py -l`
+You can see the currently known forks in `forks.yaml`. Alternatively, run `python3 silo.py -l` to see the same list.
 
 ### Adding new fork support
 Note: I'll update this to the [original scotopic version](https://github.com/scotopic/silo-wallet) occasionally but this is how you can do it:
