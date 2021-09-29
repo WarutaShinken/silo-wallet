@@ -11,6 +11,16 @@
 	call :get_balance "HDDcoin   " HDD  hdd1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqp95rd2
 	call :get_balance "Flora     " XFL  xfl1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqanrfnf
 	call :get_balance "GreenDoge " GDOG gdog1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqd48l6w
+	call :get_balance "Beer      " XBR  xbr1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqm4vtxs
+	call :get_balance "Stor      " STOR stor1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq8mwf09
+	call :get_balance "Goji      " XGJ  xgj1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqvuxwm5
+	call :get_balance "Olive     " XOL  xol1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq5em8rg
+	call :get_balance "BTCgreen  " XBTC xbtc1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqndhhzj
+	call :get_balance "Mint      " XKM  xkm1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq0egaun
+	call :get_balance "Goldcoin  " OZT  ozt1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqyfcjww
+	call :get_balance "Mogua     " MGA  mga1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hql8d4kz
+	call :get_balance "Tranzact  " TRZ  trz1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqfprpw9
+	call :get_balance "Pipscoin  " PIPS pips1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqvlxe3y
 exit /b
 
 ::Function for showing the balance of each wallet.
@@ -28,7 +38,7 @@ exit /b
 exit /b
 
 ::Code Explanation:
-:: Line 13: Exit without quitting cmd.
-:: Line 24: Echo without newline, and string manipulation on %p1% to remove double-quotes.
-:: Line 26: Whitespace-friendly echo.
-:: Line 27: Break from get_balance subroutine.
+:: Line 24: Exit Without Quitting CMD
+:: Line 35: Echo without newline, and string manipulation on %p1% to remove double-quotes.
+:: Line 37: Whitespace-Friendly Echo.
+:: Line 38: Break From get_balance Subroutine
