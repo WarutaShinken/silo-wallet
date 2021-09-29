@@ -111,7 +111,7 @@ Found this project useful? Consider sending me (Waruta) a donation:
 * TRZ: trz1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqfprpw9
 * PIPS: pips1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqvlxe3y
 
-Addresses with strikethrough are for forks that I suspect have been abandoned or just poorly maintained (specifically Chaingreen).
+Addresses with strikethrough are for forks that I suspect have been abandoned or are just poorly maintained (specifically Chaingreen).
 
 **Don't forget to consider donating to the original creator too:**
 
