@@ -61,7 +61,7 @@ Help Dialogue Example:
 
 This tool may not work with `python` if the default is Python 2.
 
-* Get Wallet Summary: `silo.py -b <receive-address>`
+* Get Wallet Summary: `silo.py -a <receive-address>`
 * Get Wallet Balance: `silo.py -b <receive-address>`
 * Get Spent* Amount: `silo.py -s <receive-address>`
 * List Supported Forks: `silo.py -l`
