@@ -123,4 +123,5 @@ Addresses with strikethrough are for forks that I suspect have been abandoned or
 * BTC: bc1q6k6tgj2nmyu44fwvut8hfh0dzht53a2nzaajve
 
 ## Feedback/Contribution
-Create a [GitHub issue](https://github.com/WarutaShinken/silo-wallet/issues) or pull request.
+* Create a [GitHub issue](https://github.com/WarutaShinken/silo-wallet/issues) or pull request.
+* Discord Server: https://discord.gg/5GXKW4nGug
