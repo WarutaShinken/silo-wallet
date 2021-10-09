@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). Since this is a simple fork of a Python program, I will be using integer versions rather than semantic ones. I will also be archiving each version into a branch instead of using releases.
 
 
+## [4] - Upcoming
+
+### Changes
+
+- Added UNITS_OF_MEASUREMENT exception for STAI (staicoin) (each STAI has 1 billion mojo instead of 1 trillion).
+
 ## [3] - 2021/09/29
 
 ### Changes
