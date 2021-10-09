@@ -2,6 +2,8 @@
 <img src="assets/silo-wallet-icon.svg" data-canonical-src="silo-wallet-icon.svg" width="128" height="128" />
 This fork was create for users that want a raw output of their wallet balance in raw form to be used in scripts.
 
+Discord Server: https://discord.gg/5GXKW4nGug
+
 # Silo ( aka "show your cold wallet balance" tool )
 Quickly look up your Chia fork/altcoin wallet balance using your cold wallet public key.
 
