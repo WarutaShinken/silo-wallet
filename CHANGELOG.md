@@ -10,13 +10,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changes
 
 - Added support for the following forks:
-  - Cactus
-  - Cryptodoge
-  - Maize
-  - Kale
-  - Taco
-  - Tad
-  - Avocado
   - Salvia
   - STAI
   - Skynet
@@ -33,7 +26,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Fixed Beer directory in `forks.yaml` (`.beer` => `.beernetwork`).
 - Added support for the following forks:
   - Stor
-  - Goji
   - Olive
   - BTCgreen
   - Mint
