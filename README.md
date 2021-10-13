@@ -17,11 +17,11 @@ Summary:
 Wallet Address    : xch1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqlpvm2y
 Wallet Puzzle Hash: 0x2574c794d11fbd762a9a7cdcaf17e1359156c01a2b75015365df39c1b9036eae
 
-Wallet Balance    : 0.000053012269 XCH
+Wallet Balance    : 2.000553012379 XCH
 Wallet Spendings  : 0.000000000000 XCH
 
 >silo.py -b xch1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqlpvm2y
-0.000053012269
+2.000553012379
 
 >silo.py -s xch1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqlpvm2y
 0.000000000000
@@ -30,6 +30,8 @@ Wallet Spendings  : 0.000000000000 XCH
 ## Which Chia fork/altcoin is supported?
 Every one of them, in theory. If you run the full node of the Chia fork/altcoin then you can use this tool to look up your balance.
 You can see the currently known forks in `forks.yaml`. Alternatively, run `python3 silo.py -l` to see the same list.
+
+Skynet mainnet (XNT) support is implemented but disabled by default (see comment in `forks.yaml`) because I can't test it until it launches.
 
 ### Manually Adding Fork Support
 
@@ -74,22 +76,32 @@ This tool may not work with `python` if the default is Python 2.
 
 An example script (example_script.sh) has been provided, which uses my wallet addresses as an example. Here is it's output:
 ```
-Chia      : 0.000053012269 XCH
-Flax      : 8.000649000000 XFX
-Chaingreen: 11000.000000000000 CGN
-HDDcoin   : 63.000000000000 HDD
-Flora     : 104.000000000000 XFL
-GreenDoge : 940.000000000000 GDOG
-Beer      : 12.000000000000 XBR
-Stor      : 48.000000000000 STOR
-Goji      : 0.000000000000 XGJ
-Olive     : 2.000000000000 XOL
-BTCgreen  : 2.000000000000 XBTC
-Mint      : 32.000000000000 XKM
-Goldcoin  : 16.000000000000 OZT
-Mogua     : 50.000000000000 MGA
-Tranzact  : 135.000000000000 TRZ
-Pipscoin  : 0.000000000000 PIPS
+Chia            : 2.000553012379 XCH
+Flax            : 14.000649000000 XFX
+Chaingreen      : 15000.000000000000 CGN
+HDDcoin         : 73.000000000000 HDD
+Flora           : 136.000000000000 XFL
+GreenDoge       : 1060.000000000000 GDOG
+Beer            : 12.000000000000 XBR
+Stor            : 156.000000000000 STOR
+Goji            : 0.000000000000 XGJ
+Olive           : 44.000000000000 XOL
+BTCgreen        : 11.000000000000 XBTC
+Mint            : 1148.000000000000 XKM
+Goldcoin        : 106.000000000000 OZT
+Mogua           : 1190.000000000000 MGA
+Tranzact        : 280.000000000000 TRZ
+Pipscoin        : 125.000000000000 PIPS
+Cactus          : 22.000000000000 CAC
+Cryptodoge      : 280000.000000000000 XCD
+Maize           : 210.000000000000 XMZ
+Kale            : 20.000000000000 XKA
+Taco            : 14.000000000000 XTX
+Tad             : 24.300000000000 TAD
+Avocado         : 8.000000000000 AVO
+Salvia          : 56.000000000000 XSLV
+STAI            : 15.000000000000 STAI
+Skynet (testnet): 5.000000000000 TXNT
 ```
 This script has been ported to Batch (example_script.bat) for Windows users. It should have identical output to it's Unix shell script counterpart.
 
@@ -112,8 +124,19 @@ Found this project useful? Consider sending me (Waruta) a donation:
 * MGA: mga1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hql8d4kz
 * TRZ: trz1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqfprpw9
 * PIPS: pips1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqvlxe3y
+* CAC: cac1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqqqx4aw
+* XCD: xcd1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqkwnwmp
+* XMZ: xmz1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq600qty
+* XKA: xka1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqxkhgdk
+* XTX: xtx1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq5kjrqy
+* TAD: tad1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqcygeys
+* AVO: avo1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hquu8ck2
+* XSLV: xslv1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq7p897u
+* STAI: stai1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqn5skda
+* <s>TXNT: txnt1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq2u4ta6</s>
 
 Addresses with strikethrough are for forks that I suspect have been abandoned or are just poorly maintained (specifically Chaingreen).
+Testnet coins have strikethrough because they just exist to test blockchain behaviour.
 
 **Don't forget to consider donating to the original creator too:**
 
