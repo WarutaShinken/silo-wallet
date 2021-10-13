@@ -9,7 +9,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changes
 
-- Added UNITS_OF_MEASUREMENT exception for STAI (staicoin) (each STAI has 1 billion mojo instead of 1 trillion).
+- Added support for the following forks:
+  - Cactus
+  - Cryptodoge
+  - Maize
+  - Kale
+  - Taco
+  - Tad
+  - Avocado
+  - Salvia
+  - STAI
+  - Skynet
+    - Supports Skynet testnet (TXNT) #9 out of the box.
+    - Entry for Skynet mainnet (XNT) uncommented, see `forks.yaml` for details.
 
 ## [3] - 2021/09/29
 
