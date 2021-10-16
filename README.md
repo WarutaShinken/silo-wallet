@@ -4,6 +4,10 @@ This fork was create for users that want a raw output of their wallet balance in
 
 Discord Server: https://discord.gg/5GXKW4nGug
 
+# Disclaimer Regarding Multiple Addresses
+
+**It's possible that this tool only works for wallets that never had their receive addresses reset.** Take this into consideration when using it.
+
 # Silo ( aka "show your cold wallet balance" tool )
 Quickly look up your Chia fork/altcoin wallet balance using your cold wallet public key.
 
@@ -34,6 +38,8 @@ You can see the currently known forks in `forks.yaml`. Alternatively, run `pytho
 Skynet mainnet (XNT) support is implemented but disabled by default (see comment in `forks.yaml`) because I can't test it until it launches.
 
 ### Manually Adding Fork Support
+
+**DISCLAIMER:** There are hardcoded exceptions for certain forks to deal with different blockchain filenames and different minors per major values. You may have to research these values and modify the executable itself to implement proper support for such forks. This is just the way the original Silo Wallet was written.
 
 1. Open `forks.yaml`.
 2. Add your token + data directory in the same format as the rest of the forks.
