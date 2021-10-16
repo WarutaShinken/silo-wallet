@@ -19,12 +19,10 @@ FORKS_LIST_FILE=(SILO_ROOT_PATH / "forks.yaml").resolve()
 # Based on chia/cmds/units.py (e.g. https://github.com/Chia-Network/chia-blockchain/blob/main/chia/cmds/units.py )
 # How to check: cat $COIN_NAME/cmds/units.py | grep -i "10 **"; cat $COIN_NAME/consensus/block_rewards.py | grep -i "_per_"
 # ChiaRose was one of several to change from trillion to billion units of measure
-# Looks like Fishery did the same thing, but to 3 million.
 MILLION = 10 ** 6
 HUNDRED_MILLION = 10 ** 8
 BILLION = 10 ** 9
 TRILLION= 10 ** 12
-FISHERY = 1000000000 * 0.001 * 3 #This is how it appears in Fishery's codebase, which is odd.
 UNITS_OF_MEASUREMENT=TRILLION
 
 # Full path to blockchain.sqlite: user_home_path/<coin data dir>/fork_mainnet_blockchain_path
@@ -163,12 +161,10 @@ def units_of_measurement(fork_token_name):
     
     if fork_token_name == "xcd":
         UNITS_OF_MEASUREMENT = MILLION
-    elif fork_token_name == "xcr" or fork_token_name == "stai":
+    elif fork_token_name == "xcr" or fork_token_name == "ffk": or fork_token_name == "stai":
         UNITS_OF_MEASUREMENT = BILLION
     elif fork_token_name == "xcc":
         UNITS_OF_MEASUREMENT = HUNDRED_MILLION
-    elif fork_token_name == "ffk":
-        UNITS_OF_MEASUREMENT = FISHERY
     else:
         UNITS_OF_MEASUREMENT = TRILLION
         
