@@ -9,7 +9,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changes
 
-- Updated minor per major value for Fishery (FFK).
 - Added support for the following forks:
   - Salvia
   - STAI
