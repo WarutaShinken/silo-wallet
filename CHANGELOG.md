@@ -15,6 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Skynet
     - Supports Skynet testnet (TXNT) #9 out of the box.
     - Entry for Skynet mainnet (XNT) uncommented, see `forks.yaml` for details.
+  - Venidium
 
 ## [3] - 2021/09/29
 
