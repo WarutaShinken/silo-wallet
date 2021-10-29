@@ -13,8 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Salvia
   - STAI
   - Skynet
-    - Supports Skynet testnet (TXNT) #9 out of the box.
-    - Entry for Skynet mainnet (XNT) uncommented, see `forks.yaml` for details.
+    - Supports Skynet testnet (TXNT) #9 as well.
   - Kujenga
   - Venidium
   - Aedge
