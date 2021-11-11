@@ -17,6 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Kujenga
   - Venidium
   - Aedge
+  - Ethgreen
 
 ## [3] - 2021/09/29
 
