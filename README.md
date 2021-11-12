@@ -35,8 +35,6 @@ Wallet Spendings  : 0.000000000000 XCH
 Every one of them, in theory. If you run the full node of the Chia fork/altcoin then you can use this tool to look up your balance.
 You can see the currently known forks in `forks.yaml`. Alternatively, run `python3 silo.py -l` to see the same list.
 
-Skynet mainnet (XNT) support is implemented but disabled by default (see comment in `forks.yaml`) because I can't test it until it launches.
-
 ### Manually Adding Fork Support
 
 **DISCLAIMER:** There are hardcoded exceptions for certain forks to deal with different blockchain filenames and different minors per major values. You may have to research these values and modify the executable itself to implement proper support for such forks. This is just the way the original Silo Wallet was written.
