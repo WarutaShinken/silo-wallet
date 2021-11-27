@@ -19,6 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Aedge
   - Ethgreen
   - SHIBgreen
+  - PecanRolls
 - Updated Fishery's directory name (`.fxxkfork` => `.fishery`).
 
 ## [3] - 2021/09/29
