@@ -160,7 +160,7 @@ def get_db_file_from_address(address):
 
 def units_of_measurement(fork_token_name):
     
-    if fork_token_name == "xshib":
+    if fork_token_name == "xshib" or if fork_token_name == "llc":
         UNITS_OF_MEASUREMENT = THOUSAND
     elif fork_token_name == "xcd":
         UNITS_OF_MEASUREMENT = MILLION
