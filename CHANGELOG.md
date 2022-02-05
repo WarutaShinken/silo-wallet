@@ -20,6 +20,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Ethgreen
   - SHIBgreen
   - PecanRolls
+  - StaiBeta
 - Updated minor per major ratio for Littlelamobocoin to 1000.
 - Updated Fishery's directory name (`.fxxkfork` => `.fishery`).
 - Updated Silicoin's directory name (`.silicoin` => `.sit`).
