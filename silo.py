@@ -164,7 +164,7 @@ def units_of_measurement(fork_token_name):
         UNITS_OF_MEASUREMENT = THOUSAND
     elif fork_token_name == "xcd":
         UNITS_OF_MEASUREMENT = MILLION
-    elif fork_token_name == "xcr" or fork_token_name == "ffk" or fork_token_name == "stai" or fork_token_name == "xeth":
+    elif fork_token_name == "xcr" or fork_token_name == "ffk" or fork_token_name == "stai" or fork_token_name == "xeth" or fork_token_name == "tstai":
         UNITS_OF_MEASUREMENT = BILLION
     elif fork_token_name == "xcc":
         UNITS_OF_MEASUREMENT = HUNDRED_MILLION
