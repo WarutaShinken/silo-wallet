@@ -29,6 +29,8 @@ UNITS_OF_MEASUREMENT=TRILLION
 # Full path to blockchain.sqlite: user_home_path/<coin data dir>/fork_mainnet_blockchain_path
 user_home_path=Path.home()
 fork_mainnet_blockchain_path="mainnet/db/blockchain_v1_mainnet.sqlite"
+# For V2 Blockchain DB
+v2_mainnet_blockchain_path="mainnet/db/blockchain_v2_mainnet.sqlite"
 # For Silicoin testnet (TSIT)
 fork_tsit_blockchain_path="mainnet/db/blockchain_v1_testnet.sqlite"
 # For Skynet testnet (TXNT) #9
@@ -124,6 +126,8 @@ def db_for_token(token_name):
     # be assigned as default value of passed argument
     
     coin_data_dir=token_to_data_dir_mapping.get(token_name, "nothing")
+    if token_name == "bpx":
+        full_path_to_db=user_home_path / coin_data_dir / v2_mainnet_blockchain_path
     if token_name == "tsit":
         full_path_to_db=user_home_path / coin_data_dir / fork_tsit_blockchain_path
     elif token_name == "txnt":
