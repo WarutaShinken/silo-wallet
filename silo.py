@@ -77,7 +77,7 @@ def main(argv):
                 print ("\tsilo -a <address> | --reward-address <receive-address> - Display a summary of your wallet balance and spendings")
                 print ("\tsilo -b <receive-address> | --balance <receive-address> - Display your wallet address balance")
                 print ("\tsilo -s <receive-address> | --spent <receive-address> - Display how many coins from your wallet were spent*")
-                print ("\tsilo -l | --list-forks - Display currently supported forks from the {} file".format(FORKS_LIST_FILE))
+                print (f"\tsilo -l | --list-forks - Display currently supported forks from the {FORKS_LIST_FILE} file")
                 
                 print('')
                 
@@ -126,8 +126,6 @@ def db_for_token(token_name):
     # be assigned as default value of passed argument
     
     coin_data_dir=token_to_data_dir_mapping.get(token_name, "nothing")
-    if token_name == "bpx":
-        full_path_to_db=user_home_path / coin_data_dir / v2_mainnet_blockchain_path
     if token_name == "tsit":
         full_path_to_db=user_home_path / coin_data_dir / fork_tsit_blockchain_path
     elif token_name == "txnt":
@@ -135,10 +133,16 @@ def db_for_token(token_name):
     else:
         full_path_to_db=user_home_path / coin_data_dir / fork_mainnet_blockchain_path
     
-    #print("FULL PATH:", full_path_to_db)
+    full_path_to_v2_db = user_home_path / coin_data_dir / v2_mainnet_blockchain_path
+    
+    global using_v2_db
     
     if Path(full_path_to_db).exists():
+        using_v2_db = False
         return full_path_to_db
+    elif Path(full_path_to_v2_db).exists():
+        using_v2_db = True
+        return full_path_to_v2_db
     else:
         print("ERROR: blockchain path does not exist: ", full_path_to_db)
         sys.exit(1)
@@ -151,20 +155,16 @@ def get_token(address):
     print("ERROR: Undefined blockchain, add your own to the {} list first and run the script again.".format(FORKS_LIST_FILE))
     sys.exit(1)
 
-def get_db_file_from_address(address):
-    load_fork_names();
-    
-    key = get_token(address)
-    
+def get_db_file_from_token(token):
     # Reset units of measurement if non-standard (i.e. ChiaRose)
     global UNITS_OF_MEASUREMENT
-    UNITS_OF_MEASUREMENT = units_of_measurement(key)
+    UNITS_OF_MEASUREMENT = units_of_measurement(token)
     
-    return db_for_token(key)
+    return db_for_token(token)
 
 def units_of_measurement(fork_token_name):
     
-    if fork_token_name == "xshib" or if fork_token_name == "llc":
+    if fork_token_name == "xshib" or fork_token_name == "llc":
         UNITS_OF_MEASUREMENT = THOUSAND
     elif fork_token_name == "xcd":
         UNITS_OF_MEASUREMENT = MILLION
@@ -189,7 +189,9 @@ def get_rows(address, verbose=False):
     
     # sql for puzzle hash
     try:
-        db_file_to_load = get_db_file_from_address(address)
+        load_fork_names();
+        key = get_token(address)
+        db_file_to_load = get_db_file_from_token(key)
         
         if verbose:
             print(f"Found blockchain database: {db_file_to_load}")
@@ -208,17 +210,22 @@ def get_rows(address, verbose=False):
         Like block = BlockRecord.from_bytes(.....)
         """
         
-        dbcursor.execute("SELECT * FROM coin_record WHERE puzzle_hash=?", (puzzle_hash,))
+        if using_v2_db and key != 'bpx':
+            puzzle_hash = f"x'{puzzle_hash}'"
+        else:
+            puzzle_hash = f"'{puzzle_hash}'"
+        
+        dbcursor.execute(f"SELECT amount, spent_index FROM coin_record WHERE puzzle_hash={puzzle_hash}")
         
         return dbcursor.fetchall()
     except Error as e:
         print(e)
 
 def transaction_size(row):
-    return int.from_bytes(row[7], 'big') / UNITS_OF_MEASUREMENT
+    return int.from_bytes(row[0], 'big') / UNITS_OF_MEASUREMENT
 
 def coin_is_spent(row):
-    return row[3]
+    return row[1]
 
 def print_coins(address, count_spent_coins):
     rows = get_rows(address)

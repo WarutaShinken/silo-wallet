@@ -21,7 +21,7 @@ Summary:
 Wallet Address    : xch1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqlpvm2y
 Wallet Puzzle Hash: 0x2574c794d11fbd762a9a7cdcaf17e1359156c01a2b75015365df39c1b9036eae
 
-Wallet Balance    : 2.000553012379 XCH
+Wallet Balance    : 4.000000000000 XCH
 Wallet Spendings  : 0.000000000000 XCH
 
 >silo.py -b xch1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqlpvm2y
@@ -78,34 +78,46 @@ This tool may not work with `python` if the default is Python 2.
 
 ### Example Script
 
-An example script (example_script.sh) has been provided, which uses my wallet addresses as an example. Here is it's output:
+An example script (example_script.sh) has been provided, which uses my wallet addresses as an example. Here is it's output (XBR and XGJ are excluded as I no longer run those forks anymore):
 ```
-Chia            : 2.000553012379 XCH
-Flax            : 14.000649000000 XFX
-Chaingreen      : 15000.000000000000 CGN
-HDDcoin         : 73.000000000000 HDD
-Flora           : 136.000000000000 XFL
-GreenDoge       : 1060.000000000000 GDOG
-Beer            : 12.000000000000 XBR
-Stor            : 156.000000000000 STOR
-Goji            : 0.000000000000 XGJ
-Olive           : 44.000000000000 XOL
-BTCgreen        : 11.000000000000 XBTC
-Mint            : 1148.000000000000 XKM
-Goldcoin        : 106.000000000000 OZT
-Mogua           : 1190.000000000000 MGA
-Tranzact        : 280.000000000000 TRZ
-Pipscoin        : 125.000000000000 PIPS
-Cactus          : 22.000000000000 CAC
-Cryptodoge      : 280000.000000000000 XCD
-Maize           : 210.000000000000 XMZ
-Kale            : 20.000000000000 XKA
-Taco            : 14.000000000000 XTX
-Tad             : 24.300000000000 TAD
-Avocado         : 8.000000000000 AVO
-Salvia          : 56.000000000000 XSLV
-STAI            : 15.000000000000 STAI
-Skynet (testnet): 5.000000000000 TXNT
+Chia           : 4.289108067600 XCH
+Flax           : 44.801582911306 XFX
+Chaingreen     : 76500.000000000000 CGN
+HDDcoin        : 36.183254228018 HDD
+Flora          : 352.000000000000 XFL
+GreenDoge      : 90.000000000001 GDOG
+Stor           : 12.088000000002 STOR
+Olive          : 460.000000000000 XOL
+BTCgreen       : 107.000000000000 XBTC
+Mint           : 80.000000000000 XKM
+Goldcoin       : 500.000000000000 OZT
+Mogua          : 1856.000000000000 MGA
+Tranzact       : 1095.000000000000 TRZ
+Pipscoin       : 1385.000000000000 PIPS
+Cactus         : 516.000000000000 CAC
+Cryptodoge     : 2080000.000000000000 XCD
+Maize          : 394.000000000001 XMZ
+Kale           : 38.000000000000 XKA
+Taco           : 280.000000000000 XTX
+Tad            : 328.300000000000 TAD
+Avocado        : 256.000000000000 AVO
+Salvia         : 539.000000000000 XSLV
+STAI           : 624.843447378000 STAI
+Kujenga        : 502.000000000000 XKJ
+Venidium       : 61280.000000000000 XVM
+Aedge          : 234.000000000000 AEC
+Skynet         : 435.000000000000 XNT
+Ethgreen       : 1998.000000000000 XETH
+SHIBgreen      : 336000.000000000000 XSHIB
+PecanRolls     : 1320.000000000000 ROLLS
+Littlelambocoin: 73.800000000000 LLC
+Silicoin       : 0.000000000000 SIT
+BPX            : 0.000000000000 BPX
+Gold           : 0.000000000000 GL
+Profit         : 0.000000000000 PROFIT
+Ecostake       : 0.000000000000 ECO
+Petroleum      : 1.000000000000 XPT
+Cunt           : 3174.000000000000 VAG
 ```
 This script has been ported to Batch (example_script.bat) for Windows users. It should have identical output to it's Unix shell script counterpart.
 
@@ -117,27 +129,42 @@ Found this project useful? Consider sending me (Waruta) a donation:
 * <s>CGN: cgn1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqs7lpjx</s>
 * HDD: hdd1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqp95rd2
 * XFL: xfl1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqanrfnf
-* GDOG: gdog1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqd48l6w
+* <s>GDOG: gdog1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqd48l6w</s>
 * <s>XBR: xbr1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqm4vtxs</s>
 * STOR: stor1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq8mwf09
 * <s>XGJ: xgj1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqvuxwm5</s>
-* XOL: xol1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq5em8rg
+* <s>XOL: xol1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq5em8rg</s>
 * XBTC: xbtc1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqndhhzj
 * XKM: xkm1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq0egaun
 * OZT: ozt1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqyfcjww
-* MGA: mga1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hql8d4kz
+* <s>MGA: mga1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hql8d4kz</s>
 * TRZ: trz1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqfprpw9
 * PIPS: pips1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqvlxe3y
 * CAC: cac1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqqqx4aw
 * XCD: xcd1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqkwnwmp
 * XMZ: xmz1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq600qty
-* XKA: xka1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqxkhgdk
+* <s>XKA: xka1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqxkhgdk</s>
 * XTX: xtx1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq5kjrqy
 * TAD: tad1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqcygeys
-* AVO: avo1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hquu8ck2
-* XSLV: xslv1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq7p897u
+* <s>AVO: avo1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hquu8ck2</s>
+* <s>XSLV: xslv1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq7p897u</s>
 * STAI: stai1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqn5skda
 * <s>TXNT: txnt1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq2u4ta6</s>
+* <s>XKJ: xkj1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqqprxam</s>
+* XVM: xvm1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqjaltxr
+* AEC: aec1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqxmlg6x
+* <s>XNT: xnt1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq8mjauf</s>
+* <s>XETH: xeth1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqjtf7t6</s>
+* XSHIB: xshib1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqrdl9tn
+* ROLLS: rolls1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq5s2vqe
+* LLC: llc1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqzzytzj
+* SIT: sit1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqth7tvn
+* BPX: bpx1e753895n0zg7t2qmcgtlcrgxhafths77304vc87z6j88nm8mlthscelqtm
+* GL: gl1l5g4r9hud4fmcddd2hng9pej5dxq4954l8d4fa5qlthczrydulwsm6xms0
+* PROFIT: profit1l5g4r9hud4fmcddd2hng9pej5dxq4954l8d4fa5qlthczrydulwsjrgrc7
+* ECO: eco1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqd8taz2
+* XPT: xpt1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqejwfny
+* VAG: vag1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqjft50k
 
 Addresses with strikethrough are for forks that I suspect have been abandoned or are just poorly maintained (specifically Chaingreen).
 Testnet coins have strikethrough because they just exist to test blockchain behaviour.

@@ -5,10 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). Since this is a simple fork of a Python program, I will be using integer versions rather than semantic ones. I will also be archiving each version into a branch instead of using releases.
 
 
-## [4] - Upcoming
+## [4] - 2022/04/13
+
+I had abandoned this project for a long time, but have decided to return to add V2 DB support. I had made other feature promises for Version 4 in the Discord server, but will probably return to them much later. It is about time I finalise this version, so enjoy.
 
 ### Changes
 
+- Added V2 DB support.
 - Added support for the following forks:
   - Salvia
   - STAI
@@ -20,8 +23,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Ethgreen
   - SHIBgreen
   - PecanRolls
-  - StaiBeta
+  - StaiDelta
   - BPX
+  - Gold
+  - Profit
+  - Ecostake
+  - Petroleum
+  - Cunt
 - Updated minor per major ratio for Littlelamobocoin to 1000.
 - Updated Fishery's directory name (`.fxxkfork` => `.fishery`).
 - Updated Silicoin's directory name (`.silicoin` => `.sit`).
