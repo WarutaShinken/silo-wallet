@@ -45,10 +45,10 @@ get_balance 'Ethgreen       ' XETH   xeth1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5
 get_balance 'SHIBgreen      ' XSHIB  xshib1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqrdl9tn
 get_balance 'PecanRolls     ' ROLLS  rolls1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hq5s2vqe
 get_balance 'Littlelambocoin' LLC    llc1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqzzytzj
-get_balance 'Silicoin       ' SIT    sit1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqth7tvn
+get_balance 'Silicoin       ' SIT    sit1l5g4r9hud4fmcddd2hng9pej5dxq4954l8d4fa5qlthczrydulwsfmswmt
 get_balance 'BPX            ' BPX    bpx1e753895n0zg7t2qmcgtlcrgxhafths77304vc87z6j88nm8mlthscelqtm
 get_balance 'Gold           ' GL     gl1l5g4r9hud4fmcddd2hng9pej5dxq4954l8d4fa5qlthczrydulwsm6xms0
 get_balance 'Profit         ' PROFIT profit1l5g4r9hud4fmcddd2hng9pej5dxq4954l8d4fa5qlthczrydulwsjrgrc7
-get_balance 'Ecostake       ' ECO    eco1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqd8taz2
-get_balance 'Petroleum      ' XPT    xpt1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqejwfny
+get_balance 'Ecostake       ' ECO    eco1l5g4r9hud4fmcddd2hng9pej5dxq4954l8d4fa5qlthczrydulws0t9c4j
+get_balance 'Petroleum      ' XPT    xpt1l5g4r9hud4fmcddd2hng9pej5dxq4954l8d4fa5qlthczrydulwsm7qvyu
 get_balance 'Cunt           ' VAG    vag1y46v09x3r77hv2560nw279lpxkg4dsq69d6sz5m9muuurwgrd6hqjft50k
